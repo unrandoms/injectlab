@@ -1,82 +1,21 @@
-## Process Injection Series
---------------------------------------------------
+# injectlab
 
-<div align="center">
-  <img width="500px" src="Assets/PE.jpg" />
-</div>
+![injectlab: Windows process research](assets/project-mark.svg)
 
-This comprehensive process injection series is crafted for cybersecurity enthusiasts, researchers, and professionals who aim to stay at the forefront of the field. It serves as a central repository of knowledge, offering in-depth exploration of various process injection techniques and methods used by adversaries.
+A collection of Windows process-injection examples with additional experiments maintained in this fork.
 
---------------------------------------------------
+Maintained by [unrandoms](https://github.com/unrandoms), derived from [Offensive-Panda/ProcessInjectionTechniques](https://github.com/Offensive-Panda/ProcessInjectionTechniques).
 
-### Purpose
-The purpose of the Process Injection Series is to share valuable knowledge with the cybersecurity community, particularly those eager to learn about malware development and advanced evasion techniques. Through this series, I aim to not only expand my own expertise but also provide a centralized resource for all tactics, techniques, and procedures (TTPs) related to process injection. By doing so, I hope to empower others with the skills and understanding needed to navigate and contribute to the evolving landscape of cybersecurity.
+## Fork-specific work
 
---------------------------------------------------
-###  Shellcode
-Throughout the series, I will be using my custom-generated shellcode, which displays a message box with the text "Hello from Offensive Panda." This shellcode serves as a consistent and straightforward payload for demonstrating various process injection techniques. However, you are encouraged to experiment with different shellcodes tailored to your needs, allowing you to explore and apply the concepts in ways that best suit your learning objectives or project requirements.
+No isolated addition is documented here as a validated feature; inspect the branch history before relying on the experiments.
 
---------------------------------------------------
+## Validation and limits
 
-### Covering Techniques
-- **Classic Code Injection Local Process**
-- **Classic Code Injection Remote Process**
-- **Classic Code Injection with API obfuscation**
-- **Classic Code Injection using VirtualProtect**
-- **Classic DLL Injection**
-- **Reflective DLL Injection**
-- **Unhook NTDLL.DLL (Lagos Island)**
-- **Process Hollowing**
-- **PE Injection**
-- **AddressOfEntrypoint Injection**
-- **APC Injection**
-- **Early Bird Injection**
-- **RWX Hunting and Injection**
-- **Process Ghosting**
-- **Module Stomping**
-- **Remote Thread Hijacking**
-- **PEB Walk Injection**
-- **PEB Walk and API obfuscation**
-- **NtCreateSection and NtMapViewOfSection**
-- **Mokingjay**
-- **Fork API Injection (Dirty Vanity)**
-- **Injection Through Fibers**
-- **NT APIs Injection**
-- **Direct Syscalls**
-- **Indirect Syscalls**
-  
---------------------------------------------------
+Windows-specific examples require an isolated Windows build and test environment. They are not validated by the Linux review.
 
-### Benefits
-- **Detailed Explaination:** Step by Step walkthrough of each technique.
-- **Implementation:** Implementation code available for each technique.
-- **Demonstartion:** Demonstration videos available for each technique to understand the execution.
-  
---------------------------------------------------
+This documentation update does not certify all inherited features. The [archived reference](UPSTREAM_README.md) describes the original ecosystem; its package names and release links may target upstream rather than this fork.
 
-### Demo
-The following GIF showing the main page of process injection series.
-![Demo](Assets/Demo.gif)
+## Credits
 
---------------------------------------------------
-
-### Contact
-For any inquiries or contributions, feel free to reach out to the [ME](https://offensive-panda.github.io/).
-
---------------------------------------------------
-
-### Disclaimer
-The content, techniques, and tools provided in this repository are intended solely for educational and research purposes within the cybersecurity community.
-
---------------------------------------------------
-
-### References
-- https://attack.mitre.org/techniques/T1055/
-- https://github.com/deepinstinct/Dirty-Vanity
-- https://www.securityjoes.com/post/process-mockingjay-echoing-rwx-in-userland-to-achieve-code-execution
-- https://www.ired.team/
-- https://github.com/jthuraisamy/SysWhispers2
-- https://github.com/klezVirus/SysWhispers3
-- https://github.com/RedTeamOperations/Advanced-Process-Injection-Workshop
-
-
+See [CREDITS.md](CREDITS.md) for the distinction between the original implementation and this fork's adaptations. Original licenses and copyright notices remain in the repository.
