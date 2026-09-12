@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "crates/classic-dll-injection",
+]
+resolver = "2"
